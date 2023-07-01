@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .container{
+            display: grid; 
+            grid-template-columns:  8vw 8vw 8vw 8vw 8vw 8vw 8vw 8vw 8vw 8vw 8vw 8vw  ;
+            grid-template-rows: 80vh 100vh 80vh;
+            gap: 10px;
+            margin: 40px;
+        }
+
+        .header  {
+            display: grid ; 
+            grid-template-columns:  30vw 30vw 30vw   ;
+            justify-content: space-evenly;
+            
+           
+        }
+        .footer  {
+            display: grid ; 
+            grid-template-columns:  18vw 55vw 18vw   ;
+            justify-content: space-evenly;
+           
+        }
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            background: lightblue;
+
+            
+        }
+        .content {
+            grid-column-start: 1;
+            grid-column-end: 8;
+            grid-row-start: 2;
+            background: lightpink;
+            
+        }
+        .aside {
+            grid-column-start: 8;
+            grid-column-end: 12;
+            grid-row-start: 2;
+            background: lightgreen;
+            
+        }
+        .santa{
+            display: grid;
+            justify-content: center;
+            list-style-type: none;
+        }
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 3;
+            background: palegoldenrod;
+        }
+       
+        
+        .sep1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .sep2 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .sep3 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .sep4 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+  
+    .box {
+    border: black solid 1px
+}
+        
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<div class="container">
+        <div class="header">
+            
+            <div class="box sep1"><h1>Introbar</h1></div>
+            <div class="box sep2"></div>
+            <div class="box sep3"></div>
+
+        </div>
+        <div class="content">
+            <div class="box sep1"><h1>MainBar</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eius rem, vero sunt ipsa nostrum repellat reprehenderit beatae animi, enim in. Ratione iure eum libero officia repudiandae consectetur dolore ipsa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab facilis, recusandae explicabo quisquam necessitatibus voluptas soluta nobis debitis, voluptatibus repudiandae amet voluptatem voluptates et illum numquam sequi facere sunt laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, numquam similique nemo sint, iusto quibusdam eius veritatis ab nostrum laboriosam quia ipsum sequi. Velit ratione cumque accusamus, impedit cum quod?
+            </p></div>
+            <div class="box sep2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eius rem, vero sunt ipsa nostrum repellat reprehenderit beatae animi, enim in. Ratione iure eum libero officia repudiandae consectetur dolore ipsa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab facilis, recusandae explicabo quisquam necessitatibus voluptas soluta nobis debitis, voluptatibus repudiandae amet voluptatem voluptates et illum numquam sequi facere sunt laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, numquam similique nemo sint, iusto quibusdam eius veritatis ab nostrum laboriosam quia ipsum sequi. Velit ratione cumque accusamus, impedit cum quod?</p>
+            </div>
+            <div class="box sep3">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eius rem, vero sunt ipsa nostrum repellat reprehenderit beatae animi, enim in. Ratione iure eum libero officia repudiandae consectetur dolore ipsa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab facilis, recusandae explicabo quisquam necessitatibus voluptas soluta nobis debitis, voluptatibus repudiandae amet voluptatem voluptates et illum numquam sequi facere sunt laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, numquam similique nemo sint, iusto quibusdam eius veritatis ab nostrum laboriosam quia ipsum sequi. Velit ratione cumque accusamus, impedit cum quod?
+                </p>
+            </div>
+            <div class="box sep4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eius rem, vero sunt ipsa nostrum repellat reprehenderit beatae animi, enim in. Ratione iure eum libero officia repudiandae consectetur dolore ipsa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab facilis, recusandae explicabo quisquam necessitatibus voluptas soluta nobis debitis, voluptatibus repudiandae amet voluptatem voluptates et illum numquam sequi facere sunt laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, numquam similique nemo sint, iusto quibusdam eius veritatis ab nostrum laboriosam quia ipsum sequi. Velit ratione cumque accusamus, impedit cum quod?
+                </p>
+            </div>
+            
+        </div>
+        <div class="aside">
+            
+            <h1>Asidebar</h1>
+            <ul class="santa">
+                <li> ITEM- </Br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, iusto tempora. Dicta culpa necessitatibus laborum mollitia? Ex sed laborum, harum ab laudantium neque enim in sequi adipisci maxime officiis omnis.</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+                <li> ITEM</li>
+            </ul>
+        </div>
+        <div class="footer">
+            
+            <div class="box sep1"></div>
+            <div class="box sep2"><h2> MoreBar</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nulla! Excepturi esse pariatur facilis deserunt, placeat iusto corporis laborum vitae architecto laudantium nemo? Odio quas animi nobis, eaque voluptatem reiciendis.</p></div>
+            <div class="box sep3"></div>
+        </div>
+</div>
+
+<footer>
+        <div class="card text-center">
+            <div class="card-header">
+              Navigation
+            </div>
+            <div class="card-body">
+              
+              <p>just a quick thing to say </p>
+              <p>just a quick thing to say </p>
+              <p>just a quick thing to say </p>
+              
+      
+              
+            </div>
+            <div class="card-footer text-body-secondary">
+              2 days ago
+            </div>
+          </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
